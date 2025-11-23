@@ -1,110 +1,96 @@
-body{
-height:100%;
-width:100%;
-margin: 0;
-padding: 0;
-}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        
+        .navbar {
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .navbar li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar a:hover {
+            color: blue;
+        }
+        
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        #about {
+            text-align: center;
+        }
+        
+        #about img {
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .project-card img {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .formdata {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
 
-header{
-    font-weight: bolder;
-    font-size: 300%;
-    text-align: center;
-    height:5%;
-    width:100%;
-}
-
-
-.navbar{
-    background-color: whitesmoke;
-    margin-top: 2%;
-    height: 100px;
-    width: 100%;
-}
-
-.navlist{
-    /*background-color: blue;*/
-    height:65%;
-    width: 5%;
-    float: right;
-    margin-right: 2%;
-    padding-top: 1.5%;
-}
-
-.name{
-    font-size: 200%;
-    /*background-color: blue;*/
-    height:100%;
-    width: 20%;
-    float: left;
-    margin-left: 5%;
-}
-
-form {
-    width: 100%;
-    max-width: 400px;      
-    margin: 60px auto;    
-    padding: 20px;
-    background: #f5f5f5;
-    text-align: center;
-}
-
-form input,
-form textarea {
-    width: 90%;
-    padding: 12px;
-    margin: 10px auto;
-    border: 2px solid #ccc;
-    font-size: 16px;
-    display: block;
-}
-
-form button {
-    padding: 12px 20px;
-    font-size: 16px;
-    background-color: green;
-    color: white;
-    border: none;
-    margin-top: 10px;
-}
-
-footer{
-    text-align: center;
-}
-
-#about {
-    padding: 20px;
-    background-color: #f2f2f2;
-    margin: 20px 0;
-}
-
-#about img {
-    margin-bottom: 10px;
-}
-
-#about p {
-    width: 90%;
-}
-
-
-#projects {
-    padding: 20px;
-    background-color: #e6e6e6;
-    margin: 20px 0;
-}
-
-.project-card {
-    border: 2px solid #aaa;
-    padding: 10px;
-    width: 220px;
-    margin-bottom: 15px;
-    background: white;
-}
-
-.project-card img {
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.project-card p {
-    margin: 0;
-}
+        @media (max-width: 600px) {
+            .navbar li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
