@@ -1,61 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suwan Dhital - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        
+        .navbar {
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+        
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .navbar li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .navbar a:hover {
+            color: blue;
+        }
+        
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        
+        #about {
+            text-align: center;
+        }
+        
+        #about img {
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .project-card img {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .formdata {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            background-color: gray;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
-
 <body>
-
-<header>Welcome to my portfolio!</header>
-
-<main>
-
-<section> 
     <nav class="navbar">
         <ul>
-            <p class="name"><a href="index.html">Suwan Dhital</a></p>
-            <p class="navlist"><a href="#about">Contact</a></p>
-            <p class="navlist"><a href="#projects">Projects</a></p>
-            <p class="navlist"><a href="#Contact">About</a></p>
+            <li class="name"><a href="index.html">Suwan Dhital</a></li>
+            <li class="navlist"><a href="#about">About</a></li>
+            <li class="navlist"><a href="#projects">Projects</a></li>
+            <li class="navlist"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-</section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <img src="images/icon.png" alt="My Photo" width="250">
-    <p>Hello! My name is Suwan Dhital. I am learning web development and enjoy creating simple and clean web pages.
-       I am also interested in cybersecurity and love exploring new technologies.</p>
-</section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.png" alt="My Photo" width="250">
+            <p>Hello! My name is Suwan Dhital.</p>
+        </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
+        <section id="projects">
+            <h2>My Projects</h2>
 
-    <div class="project-card">
-        <img src="images/Project1.png" alt="Project 3" width="200">
-        <h3>Portfolio Site</h3>
-        <p>A clean and simple portfolio website created to practice HTML and CSS, showcasing my details and projects.</p>
-    </div>
-</section>
+            <div class="project-card">
+                <img src="images/pppp.png" alt="Project 1" width="200">
+                <h3>Portfolio Site</h3>
+                <p>A clean and simple portfolio website created to practice HTML and CSS, showcasing my details and projects.</p>
+            </div>
+        </section>
 
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="form">
+                <label for="name">Name:</label><br>
+                <input class="formdata" type="text" id="name" placeholder="Enter your name"><br>
+                
+                <label for="email">Email:</label><br>
+                <input class="formdata" type="email" id="email" placeholder="Enter your email"><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea class="formdata" id="message" placeholder="Enter message"></textarea><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
-<section id="Contact">
-    <form class="form">
-        Name: <input class="formdata" type="text" placeholder="Enter your name"> <br>
-        Email: <input class="formdata" type="email" placeholder="Enter your email"> <br>
-        Message: <input class="formdata" type="text" placeholder="Enter message"> <br>
-        <button type="submit">Submit</button> <br>
-    </form>
-</section>
-
-</main>
-
-<footer>
-    <p>© 2025 Suwan Dhital</p>
-</footer>
-
+    <footer>
+        <p>© 2025 Suwan Dhital</p>
+    </footer>
 </body>
 </html>

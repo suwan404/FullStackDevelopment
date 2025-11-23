@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+<video controls width="100px" height="100px">
+    <source src="video.mp4" type="video/mp4">
+</video>
+<audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+</audio>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4FYeIGM_1hc?si=MVZPRTjdb7sYssj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+  // Get the canvas element and its drawing context
+  const canvas = document.getElementById("myCanvas");
+  const ctx = canvas.getContext("2d");
+
+  // Draw a filled rectangle
+  ctx.fillStyle = "skyblue";
+  ctx.fillRect(50, 50, 150, 100);
+
+  // Draw a circle
+  ctx.beginPath();
+  ctx.arc(250, 150, 50, 0, Math.PI * 2);
+  ctx.fillStyle = "salmon";
+  ctx.fill();
+  ctx.stroke();
+</script>
+</body>
+</html> 
