@@ -2,12 +2,16 @@ body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.5;
+            
         }
         
         .navbar {
-            background-color: #f0f0f0;
-            padding: 15px;
+            display: flex;
+flex-direction: column; /* Stacks items vertically on small screens */
+align-items: center;
+padding: 1rem;
+position: relative;
+z-index: 10;
         }
         
         .navbar ul {
@@ -50,17 +54,22 @@ body {
             border-radius: 50%;
             margin: 10px;
         }
-        .project-card {
-            border: 1px solid #ddd;
-            padding: 15px;
-            margin: 15px 0;
-            background-color: #f9f9f9;
-        }
-        
-        .project-card img {
-            display: block;
-            margin: 0 auto;
-        }
+
+#projects-grid {
+display: grid;
+/* This creates columns that are at least 300px wide, and as many as can fit */
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+padding: 2rem;
+}
+ 
+.project-card {
+/*background: #2c2c2c;*/
+border-radius: 8px;
+padding: 1.5rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}       
+       
         
         .formdata {
             width: 100%;
@@ -94,3 +103,13 @@ body {
                 margin: 5px 0;
             }
         }
+
+#video-background {
+    position: absolute;
+    top: 1;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+    z-index: -1;
+}
